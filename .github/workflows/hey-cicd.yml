@@ -1,0 +1,13 @@
+name : Hello Github Actioins 
+on:
+   workflow_dispatch:
+jobs:
+  hello:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Pring message
+          run: echo "Hello from Github Actions!"
+        - name: Show date
+          run: date
+        - name: Show operating system     
+          run: uname -a
